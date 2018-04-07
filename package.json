@@ -1,0 +1,78 @@
+{
+    "name": "rabbitvcs",
+    "displayName": "rabbitvcs",
+    "description": "rabbitvcs是linux下的tortoisesvn",
+    "version": "0.0.3",
+    "publisher": "rabbitvcs",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.update",
+        "onCommand:extension.diff",
+        "onCommand:extension.revert",
+        "onCommand:extension.add",
+        "onCommand:extension.rename",
+        "onCommand:extension.commit",
+        "onCommand:extension.log"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.commit",
+                "title": "SVN - commit"
+            },
+            {
+                "command": "extension.update",
+                "title": "SVN - update"
+            },
+            {
+                "command": "extension.diff",
+                "title": "SVN - diff"
+            },
+            {
+                "command": "extension.revert",
+                "title": "SVN - revert"
+            },
+            {
+                "command": "extension.add",
+                "title": "SVN - add"
+            },
+            {
+                "command": "extension.rename",
+                "title": "SVN - rename"
+            },
+            {
+                "command": "extension.log",
+                "title": "SVN - log"
+            }
+        ],
+        "menus": {
+            "explorer/context": [{
+                "command": "extension.commit",
+                "group": "9_cutcopypaste@2"
+            },{
+                "command": "extension.update",
+                "group": "9_cutcopypaste@1"
+            },{
+                "command": "extension.log",
+                "group": "9_cutcopypaste@3"
+            }]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
