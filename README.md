@@ -1,7 +1,7 @@
 # rabbitvcs README
 rabbitvcs是linux下的tortoisesvn，使用前请先安装`rabbitvcs`。
 
-github: 
+github: https://github.com/wukuy/rabbitvcs
 
 ### Ubuntu安装rabbitvcs
 ### 一、添加源
@@ -13,8 +13,8 @@ sudo apt-get install　rabbitvcs-nautilus rabbitvcs-gedit　rabbitvcs-cli
 
 ![1523081028499](./screenshot/01.gif)
 
-### 其他linux发行版参考官网安装教程
-下载安装`rabbitvcs`:http://wiki.rabbitvcs.org/wiki/download
+### 其他linux发行版
+参考官网安装教程`rabbitvcs`:http://wiki.rabbitvcs.org/wiki/download
 
 ### 更新
 
