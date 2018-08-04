@@ -1,6 +1,6 @@
 # rabbitvcs README
 
-为了方便`vscode` 提交 `svn`代码，
+为了方便`vscode` 提交 `svn`代码，我写了这个插件。
 rabbitvcs是linux下的tortoisesvn，使用前请先安装`rabbitvcs`。
 
 github: https://github.com/wukuy/rabbitvcs
